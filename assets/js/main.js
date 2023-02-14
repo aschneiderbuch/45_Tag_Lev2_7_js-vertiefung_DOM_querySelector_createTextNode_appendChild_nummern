@@ -63,12 +63,12 @@ function ausfüren(e) {
 
     // davor css Style verpassen
     // 0 + alle 10er rund = .weiß     der rest rechteck = .rechteck
-    if (pTag == 0) {
+    if (outputNummer === 0) { // 0 
         console.log("0 ")
         pTag.classList.add("rechteck");
         pTag.classList.add("weiss");
     }
-    else if (pTag % 10 == 0) {
+    else if (outputNummer % 10 == 0) {   // oder durch 10 Teilbar und Null Rest
         console.log(" 10er")
         pTag.classList.add("rechteck");
         pTag.classList.add("weiss");
